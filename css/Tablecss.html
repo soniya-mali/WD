@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment of Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            border: 1px solid #888;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d3eaf2;
+            color: #000;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td[rowspan], td[colspan] {
+            background-color: #eaf6fb;
+            font-weight: bold;
+        }
+
+        td[style*="writing-mode"] {
+            writing-mode: vertical-rl;
+            text-align: center;
+            background-color: #fddede;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Timetable</h2>
+    <table>
+        <tr>
+            <th>S.Y</th>
+            <th colspan="8">Subjects</th>
+        </tr>
+        <tr>
+            <th>Day & Time</th>
+            <th>9:00-10:00AM</th>
+            <th>10:00-11:00AM</th>
+            <th>11:00-11:15AM</th>
+            <th>11:15-12:15PM</th>
+            <th>12:15-1:15PM</th>
+            <th>1:15-2:00PM</th>
+            <th>2:00-3:00PM</th>
+            <th>3:00-4:00PM</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">
+                S1-DSL(Lab 8)<br>S2-AOOC(Lab 5)<br>S3-TPMS(Lab 11)<br>S4-TTL(Lab 10)<br>S5-TTL(Lab 12)<br>S6-WD(Lab 2)
+            </td>
+            <td rowspan="6" style="writing-mode: vertical-rl;">B<br>R<br>E<br>A<br>K</td>
+            <td>DS</td>
+            <td>MDM</td>
+            <td rowspan="6" style="writing-mode: vertical-rl;">L<br>U<br>N<br>C<br>H<br><br>B<br>R<br>E<br>A<br>K</td>
+            <td>AT</td>
+            <td>ES</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td colspan="2">
+                S1-DSL(Lab 8)<br>S2-AOOC(Lab 5)<br>S3-TPMS(Lab 11)<br>S4-TTL(Lab 10)<br>S5-TTL(Lab 12)<br>S6-WD(Lab 2)
+            </td>
+            <td>AT</td>
+            <td>DS</td>
+            <td>ES</td>
+            <td>WD</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2">
+                S1-DSL(Lab 8)<br>S2-AOOC(Lab 5)<br>S3-TPMS(Lab 11)<br>S4-TTL(Lab 10)<br>S5-TTL(Lab 12)<br>S6-WD(Lab 2)
+            </td>
+            <td>AOOC</td>
+            <td>MDM</td>
+            <td colspan="2">Dept. Activity</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td colspan="2">
+                S1-DSL(Lab 8)<br>S2-AOOC(Lab 5)<br>S3-TPMS(Lab 11)<br>S4-TTL(Lab 10)<br>S5-TTL(Lab 12)<br>S6-WD(Lab 2)
+            </td>
+            <td>AOOC</td>
+            <td>DS</td>
+            <td>AT</td>
+            <td>OEC</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan="2">
+                S1-DSL(Lab 8)<br>S2-AOOC(Lab 5)<br>S3-TPMS(Lab 11)<br>S4-TTL(Lab 10)<br>S5-TTL(Lab 12)<br>S6-WD(Lab 2)
+            </td>
+            <td colspan="2">
+                S1-DSL(Lab 8)<br>S2-AOOC(Lab 5)<br>S3-TPMS(Lab 11)<br>S4-TTL(Lab 10)<br>S5-TTL(Lab 12)<br>S6-WD(Lab 2)
+            </td>
+            <td>TPMS</td>
+            <td>OEC</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>LL(L)</td>
+            <td>LL(L)</td>
+            <td>LL<br>Self</td>
+            <td>LL<br>Self</td>
+            <td colspan="2">Dept. Activity</td>
+        </tr>
+    </table>
+</body>
+</html>
